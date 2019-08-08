@@ -43,26 +43,26 @@ ___
 
 - Start the backend django server
 
- - Enter the django project directory
+ - Enter the django project directory   
 `cd server/o_o/`
 
- - start the virtual environment, if not started already
+ - start the virtual environment, if not started already   
 `source ../env/bin/activate`
 
- - start redis on port 6379 django channels need this, idk why
+ - start redis on port 6379 django channels need this, idk why   
 `docker -p 6379:6379 -d redis`
-
- - Finally!, start the django server on port 9000
+ 
+ - Finally!, start the django server on port 9000   
 `python manage.py runserver 9000`
 
- - Errors?!!! (・∧‐)ゞ Install the dependencies I missed out
+ - Errors?!!! (・∧‐)ゞ Install the dependencies I missed out   
 
 
-- Start the front react server
+- Start the front react server  
 
- - Enter the root project folder
+ - Enter the root project folder  
 
- - Start the server   
+ - Start the server     
 `npm start`
 
 It should work, I am not sure.¯\_(ツ)_/¯
