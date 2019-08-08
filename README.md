@@ -8,61 +8,61 @@ ____
 
 ## Installation
 
-- Installing the frontend
- - Clone the repository   
+1. Installing the frontend
+   1. Clone the repository   
 `git clone https://github.com/suloch/django-react-chat.git`
 
- - Enter the directory   
+   2. Enter the directory   
 `cd django-react-chat`
 
- - Install the dependencies for react   
+   3. Install the dependencies for react   
 `npm i`
 
-- Install django for backend
+2. Install django for backend
 
- - Enter the server directory   
+   1. Enter the server directory   
 `cd server`
 
- - Create virtual environment using virtualenv
+   2. Create virtual environment using virtualenv
 if you dont have virtualenv installed, install it using   
 `pip3 install virtualenv`   
 `virtualenv --python=python3.7 env`
 
- - start the environment   
+   3. start the environment   
 `sorce env/bin/activate`   
 
- - Install django and rest framework   
+   4. Install django and rest framework   
 `pip install django djangorestframework`
 
- - install channels for asgi   
+   5. install channels for asgi   
 `pip install django-channels`
 
 ___
 
 ## Running
 
-- Start the backend django server
+1. Start the backend django server
 
- - Enter the django project directory   
+   1. Enter the django project directory   
 `cd server/o_o/`
 
- - start the virtual environment, if not started already   
+   2. start the virtual environment, if not started already   
 `source ../env/bin/activate`
 
- - start redis on port 6379 django channels need this, idk why   
+   3. start redis on port 6379 django channels need this, idk why   
 `docker -p 6379:6379 -d redis`
  
- - Finally!, start the django server on port 9000   
+   4. Finally!, （＾ｖ＾） start the django server on port 9000   
 `python manage.py runserver 9000`
 
- - Errors?!!! (・∧‐)ゞ Install the dependencies I missed out   
+   5. Errors?!!! (・∧‐)ゞ Install the dependencies I missed out   
 
 
-- Start the front react server  
+2. Start the front react server  
 
- - Enter the root project folder  
+   1. Enter the root project folder  
 
- - Start the server     
+   2. Start the server     
 `npm start`
 
 It should work, I am not sure.¯\_(ツ)_/¯
