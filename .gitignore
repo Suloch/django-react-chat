@@ -21,3 +21,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+server/env/
+server/o_o/accounts/__pycache__/
+server/o_o/accounts/migrations/
+server/o_o/chat/__pycache__/
+server/o_o/chat/migrations/
+server/o_o/__pycache__/
+server/o_o/chat/__pycache__/
+server/o_o/o_o/__pycache__/

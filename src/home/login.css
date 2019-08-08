@@ -1,0 +1,11 @@
+.login{
+  float:left;
+  padding: 10px;
+  padding-right: 50px;
+}
+
+.signin-error{
+  color: #f00;
+  top: 50%;
+  z-index: 1;
+}

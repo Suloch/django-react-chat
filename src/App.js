@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
+import Home from './home.js';
+import About from './About.js';
+import Contact from './Contact.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor(props){
+    super(props)
+    this.state = {username : 'Sumit'}
+    this.changeUsername = this.changeUsername.bind(this)
+  }
+
+  changeUsername(username){
+    this.setState({username : username})
+  }
+
+  render(){
+    return(
+      <Router>
+        <div>
+          <nav className='navbar navbar-expand-lg navbar-light bg-light'>
+          <a className="navbar-brand" href="/">o_o</a>
+          <ul className="navbar-nav mr-auto">
+            <li><Link to={ '/' } className="nav-link">Home</Link></li>
+            <li><Link to={ '/about' } className='nav-link'>About</Link></li>
+            <li><Link to={ '/contact' } className='nav-link'>Contact</Link></li>
+          </ul>
+          </nav>
+          <hr />
+          <Switch>
+            <Route exact path='/' render={(history) => <Home changeFunction={this.changeUsername} />} />
+            <Route path='/about' render={(history) => <About username={this.state.username} />}/>
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;

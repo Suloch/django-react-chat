@@ -1,0 +1,12 @@
+.home h2{
+  text-align: center;
+}
+.user-button:hover{
+  cursor: pointer;
+  color: #fff;
+  background-color: #f00;
+}
+
+.logout-button{
+  margin: 10px;
+}
